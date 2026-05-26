@@ -1,0 +1,11 @@
+.git
+.github
+.infrastructure
+.pre-commit-config.yaml
+.python-version
+.envrc
+.envrc.example
+tests/
+pyproject.toml
+requirements-dev.txt
+README.md
