@@ -5,7 +5,7 @@
 .python-version
 .envrc
 .envrc.example
-tests/
+specs/
 pyproject.toml
 requirements-dev.txt
 README.md

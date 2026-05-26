@@ -17,7 +17,23 @@ This template is written in Python 3.12 and uses the [Django Ninja](https://djan
 
 ## Development
 
-When developing, please ensure pre-commit hooks are enabled.  This will run linting and tests before you commit your code.  To enable hooks, run `pre-commit install` in the root of your project.
+Enable git hooks by running `pre-commit install --hook-type pre-commit --hook-type pre-push` in the root of your project.
+
+**On every commit:**
+- `ruff format` — formats code (Black-compatible)
+- `ruff check --fix` — lints and auto-fixes imports, style, annotations, and more
+
+**On every push:**
+- `pytest` — runs the full test suite and blocks the push if any tests fail
+
+You can also run these manually at any time:
+
+```bash
+ruff format app/ specs/   # format
+ruff check app/ specs/    # lint
+pytest                    # test
+pytest --cov=app --cov-report term  # test with coverage
+```
 
 **Important things to note:**
 
