@@ -2,6 +2,8 @@
 
 This is a template for creating a public REST API using Django, Django Ninja, and AWS Lambda with API Gateway. It is intended to be used as a starting point for new projects.
 
+[![Tests](https://github.com/SamsWebs/django-template-for-public-rest-apis/actions/workflows/pr-validate.yml/badge.svg)](https://github.com/SamsWebs/django-template-for-public-rest-apis/actions/workflows/pr-validate.yml)
+
 ## Overview
 
 This template is written in Python 3.12 and uses the [Django Ninja](https://django-ninja.dev/) framework for handling HTTP requests/responses.  Our API is stateless, has no database, and is intended to run ephemerally on serverless environments (currently AWS Lambda via API Gateway v2).  We achieve this by wrapping our ASGI application with [Mangum](https://mangum.fastapiexpert.com/), an ASGI adapter for AWS Lambda.  You can still develop locally by running Django's built-in development server.
