@@ -1,15 +1,15 @@
 [project]
 name = "django-serverless-template"
 version = "1.0.0"
-requires-python = ">=3.12"
+requires-python = ">=3.9"
 
 [tool.ruff]
 line-length = 88
-target-version = "py312"
+target-version = "py39"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W", "UP", "B", "ANN"]
-ignore = ["E203", "ANN101", "ANN102"]
+ignore = ["E203"]
 
 [tool.ruff.lint.per-file-ignores]
 "specs/**" = ["ANN"]
