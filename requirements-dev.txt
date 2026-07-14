@@ -1,5 +1,5 @@
 -r requirements.txt
 pytest>=8.4.2
 pytest-django>=4.9
-ruff>=0.15.20
+ruff>=0.15.21
 pre-commit>=4
